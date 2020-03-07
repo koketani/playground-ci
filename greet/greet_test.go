@@ -7,9 +7,9 @@ import (
 )
 
 func TestGreet(t *testing.T) {
-	actual := greet.Greet("koketani")
-	expected := "hello koketani"
+	actual := greet.Greet("Koketani")
+	expected := "Koketani, hello, world."
 	if actual != expected {
-		t.Fatalf("expected %s, but %s", expected, actual)
+		t.Fatalf("expected %q, but %q", expected, actual)
 	}
 }
